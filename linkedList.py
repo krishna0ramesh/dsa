@@ -57,7 +57,7 @@ def reverse(lst):
         while current is not None:
             next=current.next #track next node to not loose the rest of list
 
-            current.next=prev
+            current.next=prev #reverse the next of each node(to its previous one)
 
             prev=current
             current=next

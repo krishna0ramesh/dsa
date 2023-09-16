@@ -18,7 +18,7 @@ def binarySearch(lo,hi,condition):
 def locateCards(cards,query):
     def conditon(mid):
         if cards[mid]==query:
-            if mid>=0 and cards[mid-1]==query: #if there is a repetition of queries take the first one 
+            if mid>0 and cards[mid-1]==query: #if there is a repetition of queries take the first one 
                 return 'left'
             else:
                 return 'found'
